@@ -45,7 +45,6 @@ $("button").on("click", function() {
         personImage.addClass("gif");
         // Giving the image tag an src attribute of a proprty pulled off the
         // result item
-        personImage.attr("src", results[i].images.fixed_height.url);
 
         // Appending the paragraph and personImage we created to the "gifDiv" div we created
         gifDiv.append(p);
