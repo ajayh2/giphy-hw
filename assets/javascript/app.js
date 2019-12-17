@@ -70,3 +70,4 @@ $("#gifs-appear-here").on("click", ".gif", function() {
     $(this).attr("data-state", "still");
   }
 });
+
