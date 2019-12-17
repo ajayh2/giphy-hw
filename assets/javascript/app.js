@@ -1,3 +1,6 @@
+// local buttons
+var localButtons = ["Arnold Schwarzenegger","Michael J Fox","Lucille Ball","Taylor Swift","Samuel Jackson",]
+
 // Event listener for all button elements
 var button;
 var gifSavedButtons = "";
@@ -70,4 +73,6 @@ $("#gifs-appear-here").on("click", ".gif", function() {
     $(this).attr("data-state", "still");
   }
 });
+
+
 
