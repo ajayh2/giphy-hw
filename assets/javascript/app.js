@@ -21,6 +21,8 @@ $(document).ready(function() {
       url: queryURL,
       method: "GET"
     }).then(function(response) {
+        $("#movies").empty();
+
       var results = response.data;
       console.log(response.data);
 
@@ -33,26 +35,26 @@ $(document).ready(function() {
 
         var p = $("<p>").text("Rating: " + rating);
 
-        var personImage = $("<img>");
+        var gif = $("<img>");
 
-        personImage.attr("src", results[i].images.fixed_height_still.url);
-        personImage.attr(
+        gif.attr("src", results[i].images.fixed_height_still.url);
+        gif.attr(
           "data-still",
           results[i].images.fixed_height_still.url
         );
-        personImage.attr("data-animate", results[i].images.fixed_height.url);
-        personImage.attr("data-state", "still");
-        personImage.addClass("gif");
+        gif.attr("data-animate", results[i].images.fixed_height.url);
+        gif.attr("data-state", "still");
+        gif.addClass("gif");
 
         gifDiv.append(p);
-        gifDiv.append(personImage);
+        gifDiv.append(gif);
 
-        $("#gifs-appear-here").prepend(gifDiv);
+        $("movies").prepend(gifDiv);
       }
     });
-  });
 
-  $("#gifs-appear-here").on("click", ".gif", function() {
+
+  $(".gif").on("click", function() {
     var state = $(this).attr("data-state");
     if (state === "still") {
       $(this).attr("src", $(this).attr("data-animate"));
