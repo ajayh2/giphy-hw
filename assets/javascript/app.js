@@ -64,4 +64,32 @@ $(document).ready(function() {
       $(this).attr("data-state", "still");
     }
   });
+
+    function renderButtons() {
+        $("#movieButtons").empty();
+        for (var i = 0; i < localChanges.length; i++) {
+        var movieRender = $("<button>");
+        movieRender.addClass("movie");
+        movieRender.attr("movie-name", localChanges[i]);
+        movieRender.text(localChanges[i]);
+        $("#movieButtons").append(movieRender);
+        }
+    }
+
+    $("#addMovie").on("click", function(event) {
+        event.preventDefault();
+        var movie = $("#movie-input")
+        .val()
+        .trim();
+
+        localChanges.push(movie);
+        $("#movie-input").val(" ");
+        renderButtons();
+    });
+
+    $(document).on("click", ".movie", displayInfo);
+
+    renderButtons();
+    });
+
 });
