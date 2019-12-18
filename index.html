@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Giphtasitc</title>
 
-    <title>Giphtasitc </title>
-    
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Giphy-Homework</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-			
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giphy-Homework</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   </head>
-  
-  <body>
-      
-    <button data-person="Arnold Schwarzenegger"></button>
-    <button data-person="Michael J Fox">
-      My happiness grows in direct proportionto my acceptance,
-      and in inverse proportion to my expectations.
-    </button>
 
-  
-    <button data-person="Lucille Ball">
-      Love yourself first and everything else falls into line.
-    </button>
-    <button data-person="Taylor Swift">
-      If you're horrible to me, I'm going to write a song about it,
-      and you won't like it. That's how I operate.
-    </button>
-    <button data-person="Samuel Jackson">
-      Far better is it to dare mighty things, to win glorious triumphs,
-      even though checkered by failure... than to rank with those poor spirits who
-      neither enjoy nor suffer much, because they live in a gray twilight that
-      knows not victory nor defeat.
-    </button>
-  
-    <div id="gifs-appear-here">
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="movieButtons"></div>
+        </div>
+        <div class="col-md-6">
+          <form id="movie-form">
+            <label for="movie-input">Add a Movie:</label>
+            <input type="text" id="movie-input" />
+            <input id="addMovie" type="submit" value="submit" />
+          </form>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-md-12">
+          <div id="movies"></div>
+        </div>
+      </div>
     </div>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
   </body>
+</html>
