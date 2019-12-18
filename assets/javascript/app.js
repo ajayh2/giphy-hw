@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var localChanges = [
+    var topics = [
       "Batman Begins",
       "The Dark Knight",
       "Dark Knight Rises",
@@ -60,11 +60,11 @@ $(document).ready(function() {
   
     function renderButtons() {
       $("#movieButtons").empty();
-      for (var i = 0; i < localChanges.length; i++) {
+      for (var i = 0; i < topics.length; i++) {
         var movieRender = $("<button>");
         movieRender.addClass("movie");
-        movieRender.attr("movie-name", localChanges[i]);
-        movieRender.text(localChanges[i]);
+        movieRender.attr("movie-name", topics[i]);
+        movieRender.text(topics[i]);
         $("#movieButtons").append(movieRender);
       }
     }
@@ -75,7 +75,7 @@ $(document).ready(function() {
         .val()
         .trim();
   
-      localChanges.push(movie);
+      topics.push(movie);
       $("#movie-input").val(" ");
       renderButtons();
     });
