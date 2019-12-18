@@ -17,14 +17,6 @@ $(document).ready(function() {
       "&api_key=dc6zaTOxFJmzC&limit=10";
   }
 
-  $("button").on("click", function() {
-    var person = $(this).attr("data-person");
-
-    var queryURL =
-      "https://api.giphy.com/v1/gifs/search?q=" +
-      person +
-      "&api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&limit=10";
-
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -32,6 +24,8 @@ $(document).ready(function() {
       var results = response.data;
       console.log(response.data);
 
+      var results = response.data;
+      
       for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div>");
 

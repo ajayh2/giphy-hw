@@ -1,0 +1,33 @@
+.container {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .personMovie {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  button.movie {
+    color: darkblue;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 5px 0;
+  }
+  
+  #movie-form {
+    margin: 10px 0;
+    float: right;
+  }
+  
+  #addMovie {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  body {
+      background: url("https://media.giphy.com/media/BP9eSu9cnnGN2/giphy.gif");
+    }
