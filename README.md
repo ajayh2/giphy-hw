@@ -2,7 +2,8 @@
 Link to project https://ajayh2.github.io/giphy-hw/
 
 - Technology Used
-Bootstrap
+
+>Bootstrap
 java
 giphy API
 AJAX call
