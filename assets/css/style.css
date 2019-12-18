@@ -13,6 +13,7 @@
 button.movie {
   color: darkblue;
   font-size: 15px;
+  background: black;
   font-weight: 500;
   margin: 10px 5px 0;
 }
